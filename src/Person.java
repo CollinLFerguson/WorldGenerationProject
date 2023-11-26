@@ -1,7 +1,7 @@
 public class Person
 {
     private Race race;
-    //Culture culture
+    Culture culture;
     //Religion religions[]
     //Town town
 
@@ -12,9 +12,10 @@ public class Person
     //String style
     //
 
-    Person(Race race, String name, String gender, int age)
+    Person(Race race, Culture culture, String name, String gender, int age)
     {
         this.race = race;
+        this.culture = culture;
         this.name = name;
         this.gender = gender;
         this.age = age;
@@ -23,6 +24,9 @@ public class Person
     void printPerson()
     {
         race.printRace();
+        culture.printCulture();
         System.out.format("Hello, my name is %s, I am %s. I am %d years old\n", name, gender, age);
+        System.out.println("--------------------");
+
     }
 }
