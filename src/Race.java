@@ -1,12 +1,13 @@
 public class Race
 {
-    private String raceName;
-    private String raceSize;
-    private int raceMaxAge;
-    private int raceAdultAge;
+    final private String raceName;
+    final private String raceSize;
+    final private int raceMaxAge;
+    final private int raceAdultAge;
 
     double culturalNaturalBiases[];
     double cultureDimensionBiases[];
+
     Race(String raceName, String raceSize, int raceMaxAge, int raceAdultAge, double cultureDimensionBiases[], double culturalNaturalBiases[])
     {
         this.raceName = raceName;

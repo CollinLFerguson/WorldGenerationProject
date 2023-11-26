@@ -1,6 +1,6 @@
 public class Person
 {
-    private Race race;
+    final private Race race;
     Culture culture;
     //Religion religions[]
     //Town town
