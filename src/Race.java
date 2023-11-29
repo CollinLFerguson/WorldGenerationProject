@@ -22,6 +22,11 @@ public class Race
     {
         System.out.format("Race Name: %s\nRace Size: %s\nRace Average Lifespan: %d - Adulthood Age: %d\n", raceName, raceSize, raceMaxAge, raceAdultAge);
         System.out.println("--------------------");
-
     }
+
+    String getRaceName()
+    {
+        return raceName;
+    }
+
 }
